@@ -1,0 +1,11 @@
+#Tarea 1.3
+#Kim Trovamala
+
+#Bajar 5 secuencias de la Especie Gallus gallus
+curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&rettype=fasta&id=AY357254.1,AY257165.1,AY821520.1,NM_001030670.1,AY357253.1" >  secuencias.fasta
+
+#Buscar la secuencia TGCA dentro de las secuencias, mostrar 20 renglones antes para ver a que ID pertenece
+grep -n -B 20 TGCA miespecie3.fasta 
+
+#Contar las veces que  se repite la secuencia 
+grep -o TGCA miespecie3.fasta | wc -l
