@@ -54,4 +54,4 @@ The **process_radtags** program wants to keep the reads in phase, so that the fi
 
 The **process_radtags** program can be modified in several ways. If your data do not have barcodes, omit the barcodes file and the program will not try to demultiplex the data. You can also disable the checking of the restriction enzyme cut site, or modify what types of quality are checked for. So, the program can be modified to only demultiplex and not clean, clean but not demultiplex, or some combination.
 
-There is additional information available in *process_radtags* manual page.
+There is additional information available in **process_radtags** manual page.
